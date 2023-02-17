@@ -1,20 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
- * main - Entry point
- *
+ * main - This program prints the lowercase alphabet in reverse
+ * and uses the control loop for, and the function putchar
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	char lent;
 
 	for (lent = 'z'; lent >= 'a'; lent--)
 		putchar(lent);
-		putchar('\n');
 
+	putchar('\n');
 	return (0);
 }
