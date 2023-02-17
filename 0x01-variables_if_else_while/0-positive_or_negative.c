@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-int main(){
+
+int main(void){
 	int a;
 
 	srand(time(0));
@@ -12,7 +13,7 @@ int main(){
          if n>0 
 		 printf("%d n is positive" n);
 	 
-	 else if (n=0)
+	 else if (n==0)
 	 printf("%d is zero\n" n);
 	 
 	 else (n<0)
