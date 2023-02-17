@@ -1,22 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
- * main - Entry point
- *
+ * main - This program prints the alphabet in lowercase
+ * and uses the control loop for, and the function putchar
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	char low;
+	char len;
 
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-	for (low = 'A'; low <= 'Z'; low++)
-		putchar(low);
+	for (len = 'a'; len <= 'z'; len++)
+		putchar(len);
+
 	putchar('\n');
-
 	return (0);
 }
