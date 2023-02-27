@@ -1,28 +1,22 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_array - print `n` elements of an array of integers
- * @a: int type array pointer
- * @n: int type integer
- * Description: Numbers must be separated by comma and space.
- * Numbers should be displayed in the same order they are stored in array.
- * You can only use _putchar to print.
+ * puts_half - print second half of a string
+ * @str: char array string type
+ * Description: If odd number of chars, print (length - 1) / 2
  */
 
-void print_array(int *a, int n)
+void puts_half(char *str)
 {
 	int i;
 
-	i = 0;
-	for (n--; n >= 0; n--, i++)
-	{
-		printf("%d", a[i]);
-		if (n > 0)
-		{
-			printf(", ");
-		}
-	}
-	printf("\n");
+	for (i = 0; str[i] != '\0'; i++)
+		;
 
+	i++;
+	for (i /= 2; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
